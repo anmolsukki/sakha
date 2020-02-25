@@ -1,0 +1,211 @@
+@import url('ResponsiveTheme.css');
+
+/* Fade In */
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* clear Margin */
+.clear-margins {
+  margin: 0;
+}
+
+/* Clear Paddings */
+.clear-padings {
+  padding: 0;
+}
+
+/* More */
+.home-more {
+  -moz-transition: height 0.2s ease;
+  -webkit-transition: height 0.2s ease;
+  -ms-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+  -moz-animation: more 0.75s ease-out 0.5s forwards;
+  -webkit-animation: more 0.75s ease-out 0.5s forwards;
+  -ms-animation: more 0.75s ease-out 0.5s forwards;
+  animation: more 0.75s ease-out 0.5s forwards;
+  border: 0;
+  bottom: -3em;
+  color: #1ba5d5;
+  display: block;
+  height: 3em;
+  left: 50%;
+  margin-left: -1.5em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 3em;
+  white-space: nowrap;
+  width: 3em;
+  z-index: 2;
+  border-radius: 100%;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+@-moz-keyframes more {
+  0% {
+    bottom: -3em;
+  }
+  100% {
+    bottom: 2em;
+  }
+}
+
+@-webkit-keyframes more {
+  0% {
+    bottom: -3em;
+  }
+  100% {
+    bottom: 2em;
+  }
+}
+
+@-ms-keyframes more {
+  0% {
+    bottom: -3em;
+  }
+  100% {
+    bottom: 2em;
+  }
+}
+
+@keyframes more {
+  0% {
+    bottom: -3em;
+  }
+  100% {
+    bottom: 2em;
+  }
+}
+
+.home-more:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.home-more:hover {
+  color: #1ba5d5;
+  box-shadow: none;
+}
+
+.home-more:hover:before {
+  color: #1ba5d5;
+}
+
+.home-more:before {
+  content: '\f107';
+  color: #1ba5d5;
+  font-size: 2em;
+  position: absolute;
+  right: 0.425em;
+  bottom: -0.075em;
+}
+
+/* ------------------------------------------- AboutPage ------------------------------------------- */
+
+.about-bg {
+  background-image: url('/Images/about-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.about-main {
+  position: absolute;
+  bottom: 100px;
+  margin-left: 35px;
+}
+
+.about-main .heading {
+  color: #ffffff;
+  font-size: 66px;
+  font-family: 'FiraSans-SemiBold';
+}
+
+.about-page .heading {
+  color: #1c2e3d;
+  font-size: 48px;
+  font-family: 'FiraSans-Regular';
+}
+
+.about-page .description {
+  width: 100%;
+  color: #1c2e3d;
+  font-size: 22px;
+  font-family: 'FiraSans-Regular';
+  text-align: justify;
+}
+
+.about-journey .heading {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'FiraSans-Regular';
+}
+
+.about-journey .description {
+  width: 100%;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'FiraSans-Regular';
+  text-align: justify;
+}
