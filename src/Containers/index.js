@@ -72,14 +72,6 @@ class Main extends Component {
     return (
       <div>
         <div className="sidenav">
-          {this.state.screenWidth <= 767 ? (
-            <div>
-              <span className="lh-name" onClick={this.gotoHome}>
-                Sakha
-              </span>
-            </div>
-          ) : null}
-
           {this.state.drawerSelected === false ? (
             <div className="hamburger-position">
               <button className="openbtn" onClick={this.openNav}>
@@ -111,7 +103,17 @@ class Main extends Component {
                     to={{ pathname: '/about' }}
                     className={this.props.location.pathname === '/about' ? 'nav-option active' : ''}
                     onClick={this.handleDrawerClick}>
-                    About
+                    About Sakha
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/meditation' }}
+                    className={
+                      this.props.location.pathname === '/meditation' ? 'nav-option active' : ''
+                    }
+                    onClick={this.handleDrawerClick}>
+                    Meditation
                   </Link>
                 </li>
                 <li className="nav-option">
@@ -126,12 +128,22 @@ class Main extends Component {
                 </li>
                 <li className="nav-option">
                   <Link
-                    to={{ pathname: '/meditation' }}
+                    to={{ pathname: '/quotes' }}
                     className={
-                      this.props.location.pathname === '/meditation' ? 'nav-option active' : ''
+                      this.props.location.pathname === '/quotes' ? 'nav-option active' : ''
                     }
                     onClick={this.handleDrawerClick}>
-                    Beyond Meditation
+                    Quotes By Sakha
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/videos' }}
+                    className={
+                      this.props.location.pathname === '/videos' ? 'nav-option active' : ''
+                    }
+                    onClick={this.handleDrawerClick}>
+                    Videos
                   </Link>
                 </li>
               </ul>

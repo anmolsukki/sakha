@@ -89,7 +89,7 @@
   text-indent: 3em;
   white-space: nowrap;
   width: 3em;
-  z-index: 2;
+  z-index: 0;
   border-radius: 100%;
   text-decoration: none;
   opacity: 0.5;
@@ -158,7 +158,82 @@
   bottom: -0.075em;
 }
 
+/* ------------------------------------------- HomePage ------------------------------------------- */
+
+.home-bg {
+  background-image: url('/Images/home-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-main {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.welcome {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'FiraSans-Regular';
+}
+
+.meditation-desc {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'FiraSans-Regular';
+}
+
+.home-main .heading {
+  color: #ffffff;
+  font-size: 66px;
+  font-family: 'FiraSans-SemiBold';
+}
+
+.social-section {
+  position: absolute;
+  bottom: 0;
+}
+
+.home-social-icon {
+  float: right;
+  margin-right: 20px;
+}
+
+.home-social-icon li {
+  margin: 50px 0;
+  list-style: none;
+  text-align: center;
+}
+
+.home-btn-group {
+  float: left;
+  margin-left: 100px;
+}
+
 /* ------------------------------------------- AboutPage ------------------------------------------- */
+
+.design-bg-right {
+  background-image: url('/Images/design-right.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 100%;
+}
+
+.design-bg-left {
+  background-image: url('/Images/design-left.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+}
 
 .about-bg {
   background-image: url('/Images/about-bg.png');
@@ -208,4 +283,243 @@
   font-size: 22px;
   font-family: 'FiraSans-Regular';
   text-align: justify;
+}
+
+.quotes {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 56px;
+  font-family: 'FiraSans-Medium';
+  padding: 25px;
+}
+
+.quotes-writer {
+  text-align: right;
+  margin-right: 40px;
+  color: white;
+  font-size: 21px;
+}
+
+/* ------------------------------------------- TherapiesPage ------------------------------------------- */
+
+.therapies-bg {
+  background-image: url('/Images/therapies-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.therapies-main {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+}
+
+.therapies-categories {
+  color: #1c2e3d;
+  padding: 40px;
+}
+
+.therapies-categories ul li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'FiraSans-Regular';
+}
+
+.selected-categories {
+  color: #e8594e;
+}
+
+.about-page .therepies-desc {
+  width: 100%;
+  color: #1c2e3d;
+  font-size: 16px;
+  font-family: 'FiraSans-Regular';
+  text-align: justify;
+}
+
+.about-page .therepies-heading {
+  color: #1c2e3d;
+  font-size: 26px;
+  font-family: 'FiraSans-Regular';
+}
+
+.depression-occur .num {
+  font-size: 77px;
+  color: #bbbbbb;
+  font-family: 'FiraSans-Regular';
+}
+
+.depression-occur .title {
+  color: #1c2e3d;
+  font-size: 24px;
+  font-family: 'FiraSans-Regular';
+}
+
+.depression-occur-description {
+  color: #1c2e3d;
+  font-size: 14px;
+  font-family: 'FiraSans-Regular';
+}
+
+.symptoms-point ul li {
+  color: #1c2e3d;
+  font-size: 16px;
+}
+
+.youtube-card {
+  border-radius: 10px;
+}
+
+/* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+.meditation-bg {
+  background-image: linear-gradient(transparent, transparent, #184448),
+    url('/Images/meditation-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.madition-gradiant {
+  background-image: linear-gradient(
+    #17444b 0%,
+    #18464b 25%,
+    #009bd1 50%,
+    #009bd1 75%,
+    #009bd1 100%
+  );
+}
+
+/* ------------------------------------------- QuotesPage ------------------------------------------- */
+
+.quotes-bg {
+  background-image: url('/Images/quotes-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+}
+
+.quotes-main {
+  position: fixed;
+  top: 50%;
+  left: 275px;
+  text-align: center;
+  width: 100%;
+}
+
+.quotes-note {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'FiraSans-Regular';
+}
+
+/* ------------------------------------------- FooterPage ------------------------------------------- */
+
+.single-widget h2 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hr-line {
+  background-color: #d7b271;
+  text-align: left;
+  width: 50px;
+  margin-left: 0;
+  height: 1px;
+}
+
+.footer-sub-title {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+.single-widget ul li a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.single-widget ul li a:hover {
+  background: none;
+  color: #ffffff;
+}
+
+.subscribe input {
+  width: 100%;
+  color: #1c2e3d;
+  outline: none;
+  padding: 0px 11px;
+  font-size: 13px;
+  font-weight: 400;
+  vertical-align: top;
+  background-color: #ffffff;
+  box-shadow: none;
+  border-radius: 10px;
+  border: none;
+  transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  height: 60px;
+}
+
+.food-btn {
+  color: #ffffff;
+  outline: none;
+  padding: 0px 11px;
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: top;
+  background-color: #e8594e;
+  box-shadow: none;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  width: 100%;
+  height: 60px;
+  font-family: 'FiraSans-Regular';
+  text-transform: uppercase;
+  line-height: 34px;
+}
+
+.footer-bottom {
+  background: #3b9bd1;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 15px;
+}
+
+.social-icons {
+  padding: 10px 0;
+}
+
+/* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+.video-style {
+  height: 250px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.Videos-header {
+  width: 100%;
+  padding: 20px 20px 0;
+  font-size: 20px;
+  font-weight: 700;
 }

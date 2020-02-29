@@ -1,0 +1,739 @@
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  /* ------------------------------------------- HomePage ------------------------------------------- */
+  .home-bg {
+    background-image: url('/Images/home-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .home-btn-group {
+    float: left;
+    margin: unset !important;
+  }
+
+  .home-social-icon {
+    float: right;
+    margin-right: 20px;
+    bottom: 160px;
+    right: 0;
+    position: absolute;
+  }
+
+  .home-social-icon li {
+    margin: 20px 0 !important;
+    list-style: none;
+    text-align: center;
+  }
+
+  .welcome {
+    font-size: 35px !important;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .home-main .heading {
+    color: #ffffff;
+    font-size: 25px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  /* ------------------------------------------- AboutPage ------------------------------------------- */
+  .about-bg {
+    background-image: url('/Images/about-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top;
+    height: 310px !important;
+    width: 100%;
+  }
+
+  .about-main {
+    position: absolute;
+    bottom: 100px;
+    margin: unset !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-main .heading {
+    color: #ffffff;
+    font-size: 23px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  .about-page .heading {
+    color: #1c2e3d;
+    font-size: 32px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-page .description {
+    width: 100%;
+    color: #1c2e3d;
+    font-size: 13px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .about-journey .heading {
+    color: #ffffff;
+    font-size: 32px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 13px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .quotes {
+    color: #ffffff;
+    font-size: 20px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Medium';
+    padding: 25px;
+  }
+
+  .youtube-card {
+    border-radius: 10px;
+    width: 100%;
+    height: 220px;
+  }
+
+  /* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+  .meditation-bg {
+    background-image: linear-gradient(transparent, #1b4549 100%, #184448),
+      url('/Images/meditation-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 310px !important;
+    width: 100%;
+  }
+
+  .meditation-desc {
+    font-size: 25px !important;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'FiraSans-Regular';
+    margin-bottom: 40px;
+  }
+
+  /* ------------------------------------------- TherapiesPage ------------------------------------------- */
+
+  .therapies-bg {
+    background-image: url('/Images/therapies-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top;
+    height: 310px !important;
+    width: 100%;
+  }
+
+  .therapies-categories {
+    color: #1c2e3d;
+    padding: unset !important;
+    text-align: center;
+  }
+
+  .therapies-categories ul {
+    display: flex;
+  }
+
+  .therapies-categories ul li {
+    list-style-type: none;
+    padding: 7px !important;
+    font-size: 15px !important;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .frastration-mob {
+    text-align: center;
+  }
+
+  .depression-occur .num {
+    font-size: 55px !important;
+    color: #bbbbbb;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .depression-occur-description {
+    color: #1c2e3d;
+    font-size: 14px;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .symptoms-point ul {
+    margin-left: 20px;
+  }
+
+  /* ------------------------------------------- QuotesPage ------------------------------------------- */
+
+  .quotes-bg {
+    background-image: url('/Images/quotes-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top !important;
+    height: 310px !important;
+    width: 100%;
+  }
+
+  .quotes-main {
+    display: none;
+  }
+
+  /* ------------------------------------------- FooterPage ------------------------------------------- */
+  .single-widget {
+    margin-top: 20px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    color: #1c2e3d;
+    outline: none;
+    padding: 0px 11px;
+    font-size: 13px;
+    font-weight: 400;
+    vertical-align: top;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 10px;
+    border: none;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    height: 50px !important;
+  }
+
+  .food-btn {
+    color: #ffffff;
+    outline: none;
+    padding: 0px 11px;
+    font-size: 12px;
+    font-weight: 400;
+    vertical-align: top;
+    background-color: #e8594e;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 100%;
+    height: 50px !important;
+    font-family: 'FiraSans-Regular';
+    text-transform: uppercase;
+    line-height: 34px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 576px) {
+  /* ------------------------------------------- HomePage ------------------------------------------- */
+  .home-bg {
+    background-image: url('/Images/home-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .home-btn-group {
+    float: left;
+    margin: unset !important;
+  }
+
+  .home-social-icon {
+    float: right;
+    margin-right: 20px;
+    bottom: 160px;
+    right: 0;
+    position: absolute;
+  }
+
+  .home-social-icon li {
+    margin: 20px 0 !important;
+    list-style: none;
+    text-align: center;
+  }
+
+  .home-main .heading {
+    color: #ffffff;
+    font-size: 35px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  /* ------------------------------------------- AboutPage ------------------------------------------- */
+  .about-bg {
+    background-image: url('/Images/about-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top;
+    height: 460px !important;
+    width: 100%;
+  }
+
+  .about-main .heading {
+    color: #ffffff;
+    font-size: 35px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  .about-page .heading {
+    color: #1c2e3d;
+    font-size: 35px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-page .description {
+    width: 100%;
+    color: #1c2e3d;
+    font-size: 16px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .about-journey .heading {
+    color: #ffffff;
+    font-size: 35px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .quotes {
+    color: #ffffff;
+    font-size: 30px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Medium';
+    padding: 25px;
+  }
+
+  /* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+  .meditation-bg {
+    background-image: linear-gradient(transparent, #1b4549 100%, #184448),
+      url('/Images/meditation-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 460px !important;
+    width: 100%;
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  /* ------------------------------------------- TherapiesPage ------------------------------------------- */
+
+  .therapies-bg {
+    background-image: url('/Images/therapies-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top;
+    height: 460px !important;
+    width: 100%;
+  }
+
+  .youtube-card {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+  }
+
+  .therapies-categories ul {
+    display: flex;
+  }
+
+  .frastration-mob {
+    text-align: center;
+  }
+
+  .symptoms-point ul {
+    margin-left: 20px;
+  }
+
+  /* ------------------------------------------- QuotesPage ------------------------------------------- */
+  .quotes-bg {
+    background-image: url('/Images/quotes-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top !important;
+    height: 460px !important;
+    width: 100%;
+  }
+
+  .quotes-main {
+    display: none;
+  }
+
+  /* ------------------------------------------- FooterPage ------------------------------------------- */
+  .single-widget {
+    margin-top: 20px;
+  }
+
+  /* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+  .video-style {
+    height: 240px !important;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  /* ------------------------------------------- HomePage ------------------------------------------- */
+  .home-bg {
+    background-image: url('/Images/home-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .home-btn-group {
+    float: left;
+    margin: unset !important;
+  }
+
+  .home-social-icon {
+    float: right;
+    margin-right: 20px;
+    bottom: 160px;
+    right: 0;
+    position: absolute;
+  }
+
+  .home-social-icon li {
+    margin: 20px 0 !important;
+    list-style: none;
+    text-align: center;
+  }
+
+  .home-main .heading {
+    color: #ffffff;
+    font-size: 45px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  /* ------------------------------------------- AboutPage ------------------------------------------- */
+
+  .about-bg {
+    background-image: url('/Images/about-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 535px !important;
+    width: 100%;
+  }
+
+  .about-main .heading {
+    color: #ffffff;
+    font-size: 45px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  .about-page .heading {
+    color: #1c2e3d;
+    font-size: 40px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-page .description {
+    width: 100%;
+    color: #1c2e3d;
+    font-size: 18px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .about-journey .heading {
+    color: #ffffff;
+    font-size: 40px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .quotes {
+    color: #ffffff;
+    font-size: 30px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Medium';
+    padding: 25px;
+  }
+
+  /* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+  .meditation-bg {
+    background-image: linear-gradient(transparent, #1b4549 100%, #184448),
+      url('/Images/meditation-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 535px !important;
+    width: 100%;
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .youtube-card {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+
+  /* ------------------------------------------- TherapiesPage ------------------------------------------- */
+
+  .therapies-bg {
+    background-image: url('/Images/therapies-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 535px !important;
+    width: 100%;
+  }
+
+  .therapies-categories ul {
+    display: inline-flex;
+  }
+
+  .therapies-categories {
+    color: #1c2e3d;
+    padding: 0 !important;
+  }
+
+  .therapies-categories ul li {
+    list-style-type: none;
+    padding: 20px 0;
+    font-size: 20px !important;
+    cursor: pointer;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .depression-occur .num {
+    font-size: 50px !important;
+    color: #bbbbbb;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .depression-occur .title {
+    color: #1c2e3d;
+    font-size: 20px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  /* ------------------------------------------- QuotesPage ------------------------------------------- */
+  .quotes-bg {
+    background-image: url('/Images/quotes-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top !important;
+    height: 535px !important;
+    width: 100%;
+  }
+
+  .quotes-main {
+    display: none;
+  }
+
+  /* ------------------------------------------- FooterPage ------------------------------------------- */
+  .single-widget {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* ------------------------------------------- HomePage ------------------------------------------- */
+  .home-btn-group {
+    float: left;
+    margin-left: 30px !important;
+  }
+
+  .home-main .heading {
+    color: #ffffff;
+    font-size: 40px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  /* ------------------------------------------- AboutPage ------------------------------------------- */
+
+  .about-bg {
+    background-image: url('/Images/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about-main .heading {
+    color: #ffffff;
+    font-size: 40px !important;
+    font-family: 'FiraSans-SemiBold';
+  }
+
+  .about-page .heading {
+    color: #1c2e3d;
+    font-size: 40px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-page .description {
+    width: 100%;
+    color: #1c2e3d;
+    font-size: 20px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  .about-journey .heading {
+    color: #ffffff;
+    font-size: 40px !important;
+    line-height: 56px;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  /* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+  .about-journey .description {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px !important;
+    font-family: 'FiraSans-Regular';
+    text-align: justify;
+  }
+
+  /* ------------------------------------------- TherapiesPage ------------------------------------------- */
+  .therapies-bg {
+    background-image: url('/Images/therapies-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .therapies-categories {
+    color: #1c2e3d;
+    padding: 10px 0 !important;
+  }
+
+  .depression-occur .num {
+    font-size: 50px !important;
+    color: #bbbbbb;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .depression-occur .title {
+    color: #1c2e3d;
+    font-size: 18px !important;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .youtube-card {
+    border-radius: 10px;
+    width: 85%;
+    height: 275px;
+  }
+
+  /* ------------------------------------------- QuotesPage ------------------------------------------- */
+
+  .quotes-main {
+    display: none;
+  }
+
+  /* ------------------------------------------- FooterPage ------------------------------------------- */
+  .subscribe input {
+    width: 100%;
+    color: #1c2e3d;
+    outline: none;
+    padding: 0px 11px;
+    font-size: 13px;
+    font-weight: 400;
+    vertical-align: top;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 10px;
+    border: none;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    height: 45px !important;
+  }
+
+  .food-btn {
+    color: #ffffff;
+    outline: none;
+    padding: 0px 11px;
+    font-size: 12px;
+    font-weight: 400;
+    vertical-align: top;
+    background-color: #e8594e;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 100%;
+    height: 45px !important;
+    font-family: 'FiraSans-Regular';
+    text-transform: uppercase;
+    line-height: 34px;
+  }
+}

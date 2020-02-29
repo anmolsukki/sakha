@@ -1,5 +1,5 @@
 body {
-  background: #ffffff;
+  background: #f7f7f7;
 }
 
 * {
@@ -10,6 +10,11 @@ body {
 @font-face {
   font-family: 'FiraSans-SemiBold';
   src: url('/public/fonts/FiraSans-SemiBold.ttf') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'FiraSans-Medium';
+  src: url('/public/fonts/FiraSans-Medium.ttf') format('embedded-opentype');
 }
 
 @font-face {

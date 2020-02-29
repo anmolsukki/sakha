@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 import '../../Assets/PortalTheme.css';
 
 class About extends Component {
@@ -14,17 +15,17 @@ class About extends Component {
                   <span className="heading">“My Life is my message…!”</span>
                 </div>
               </div>
+              <Link to="#" className="home-more">
+                Learn More
+              </Link>
             </div>
           </div>
-          <Link to="#" className="home-more">
-            Learn More
-          </Link>
         </section>
         <section>
           <div className="row clear-margins">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div className="row">
-                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 mt-5 mb-5 mx-auto">
+              <div className="row design-bg-right">
+                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 mt-5 mb-5 mx-auto">
                   <div className="about-page">
                     <p className="heading">About Sakha</p>
                     <p className="description">
@@ -51,9 +52,9 @@ class About extends Component {
         </section>
         <section>
           <div className="row clear-margins" style={{ background: '#009BD1' }}>
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5 mb-5 mx-auto">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5 mx-auto">
               <div className="row">
-                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
+                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 mb-5 mx-auto">
                   <div className="about-journey">
                     <p className="heading">His Journey</p>
                     <p className="description">
@@ -132,19 +133,19 @@ class About extends Component {
         <section>
           <div className="row clear-margins">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5 mx-auto">
-              <div className="row">
+              <div className="row design-bg-left">
                 <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col- mx-auto">
                   <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mx-auto text-center">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mx-auto text-center">
                       <img src="Images/about-card1.png" alt="" className="img-fluid" />
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mx-auto text-center">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mx-auto text-center">
                       <img src="Images/about-card2.png" alt="" className="img-fluid" />
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-5 mx-auto text-center">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-5 mx-auto text-center">
                       <img src="Images/about-card3.png" alt="" className="img-fluid" />
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-5 mx-auto text-center">
+                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-5 mx-auto text-center">
                       <img src="Images/about-card4.png" alt="" className="img-fluid" />
                     </div>
                   </div>
@@ -152,6 +153,50 @@ class About extends Component {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          <div className="row clear-margins">
+            <div
+              className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-11 mt-5 mb-5 mx-auto"
+              style={{ background: '#009BD1', borderRadius: '5px' }}>
+              <div className="text-center">
+                <p className="quotes">
+                  "अक्सर वक़्त बर्बाद करने वालो के पास ध्यान के लिए वक़्त नहीं होता"
+                </p>
+                <p className="quotes-writer">
+                  <span>-Sakha</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="row clear-margins">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div className="row">
+                <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 mt-5 mb-5 mx-auto">
+                  <div className="about-page">
+                    <p className="heading">Teachings</p>
+                    <p className="description">
+                      The procedure of his teachings is special & unique in itself, as it is not
+                      related to any particular ideology or belief. Rather through these procedures,
+                      the powerful & authentic methods of self-exploration are introduced.
+                    </p>
+                    <p className="description">
+                      Sakha has mastery on treating problems like Depression, Anxiety, Stress,
+                      Insomnia, Fear, and Neurological Disorder without any medicine. His mission is
+                      to take forward his scientific techniques and deep Spiritual knowledge to
+                      reach out to masses so that everyone can live healthy, happy, fearless and
+                      blissful life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section style={{ background: '#009BD1' }}>
+          <Footer />
         </section>
       </div>
     );
