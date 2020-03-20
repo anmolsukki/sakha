@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../../Assets/PortalTheme.css';
 
 class Quotes extends Component {
@@ -8,6 +9,13 @@ class Quotes extends Component {
       onStep: 1
     };
   }
+
+  scrollPage = (value) => {
+    window.scrollTo({
+      top: value,
+      behavior: 'smooth'
+    });
+  };
 
   goToStep = (step) => {
     if (step)
@@ -27,6 +35,9 @@ class Quotes extends Component {
                   <p className="quotes-note">Quotes By Sakha</p>
                 </div>
               </div>
+              <Link to="#" onClick={() => this.scrollPage(300)} className="home-more">
+                Learn More
+              </Link>
             </div>
           </div>
         </section>

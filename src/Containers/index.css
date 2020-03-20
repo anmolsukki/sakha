@@ -5,8 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
-  background-image: linear-gradient(#ffffff, #707070);
+  z-index: 2;
+  background-image: linear-gradient(45deg, black, transparent);
   overflow-x: hidden;
 }
 
@@ -71,7 +71,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(#ffffff, #707070);
+  background-image: linear-gradient(45deg, black, transparent);
   overflow-x: hidden;
   transition: 0.5s;
   margin-left: 90px;
@@ -84,9 +84,9 @@
   margin: 25px 0 15px 0;
   text-align: left;
   opacity: 0;
-  transition: 0.3s;
-  animation: lh-fade 0.3s ease-in both;
-  animation-delay: 0.3s;
+  transition: 0.2s;
+  animation: lh-fade 0.2s ease-in both;
+  animation-delay: 0.2s;
   font-family: 'Poppins-SemiBold';
 }
 
@@ -104,18 +104,20 @@
 .nav-menu {
   list-style: none;
   padding: 0;
+  margin-top: 30px;
 }
 
 .nav-option a {
-  padding: 8px 8px 8px 0;
+  padding: 8px 35px;
   text-decoration: none;
-  font-size: 22px;
-  color: #888888;
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #ffffffb5;
   display: block;
   opacity: 0;
-  transition: 0.7s;
-  animation: nav-fade 0.7s ease-in both;
-  animation-delay: 0.7s;
+  transition: 0.2s;
+  animation: nav-fade 0.2s ease-in both;
+  animation-delay: 0.2s;
   font-family: 'Poppins-SemiBold';
 }
 
@@ -133,13 +135,11 @@
 .nav-option.active {
   color: #e8594e;
   font-weight: 700;
-  border-bottom: 2px solid #e8594e;
-  padding-left: 15px;
 }
 
 /* Main Container */
 .main-container {
-  padding-left: 90px;
+  padding-left: 0;
   padding-right: 0;
 }
 
@@ -151,8 +151,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
-    background-image: linear-gradient(#ffffff, #707070);
+    z-index: 2;
+    background-image: linear-gradient(45deg, black, transparent);
     overflow-x: hidden;
   }
 
@@ -161,28 +161,28 @@
   .hamburger-position {
     position: fixed;
     top: 0;
-    left: 10px;
+    left: 20px;
     margin-top: 16px;
   }
 
   .hamburger-menu {
     width: 25px;
     height: 2px;
-    background-color: #bbbbbb;
+    background-color: #ffffff;
     margin: 6px 0;
   }
 
   .line-first {
     width: 23px;
     height: 2px;
-    background-color: #bbbbbb;
+    background-color: #ffffff;
     transform: rotate(45deg);
   }
 
   .line-second {
     width: 23px;
     height: 2px;
-    background-color: #bbbbbb;
+    background-color: #ffffff;
     transform: rotate(-45deg);
     margin: -2px 0;
   }
@@ -195,10 +195,14 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: linear-gradient(#ffffff, #707070);
+    background-image: linear-gradient(45deg, black, transparent);
     overflow-x: hidden;
     transition: 0.5s;
     margin-left: 0;
+  }
+
+  .home-icon {
+    width: 45px;
   }
 
   .lh-header-fade {
@@ -216,10 +220,11 @@
     padding: 8px 8px 8px 15px;
     text-decoration: none;
     font-size: 25px;
-    color: #888888;
+    color: #ffffffb5;
     display: block;
     opacity: 0;
     transition: 0.5s;
+    letter-spacing: unset;
     animation: nav-fade 0.5s ease-in both;
     animation-delay: 0.5s;
     text-align: left;

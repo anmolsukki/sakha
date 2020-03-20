@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { connect } from 'react-redux';
+import * as actionCreator from '../../Redux/Actions/ActionTypes/index';
 import '../../Assets/PortalTheme.css';
 
 class Footer extends Component {
@@ -16,11 +20,19 @@ class Footer extends Component {
     });
   };
 
+  subscribeSubmit = () => {
+    const data = {
+      email: this.state.email
+    };
+    this.props && this.props.subscribeNowActionCall(data);
+  };
+
   render() {
     return (
       <div>
+        <ToastContainer autoClose={3000} />
         <div className="row clear-margins">
-          <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 mt-5 mb-5 mx-auto">
+          <div className="col-xl-10 col-lg-10 col-md-9 col-sm-10 col-12 mt-5 mb-5 mx-auto">
             <div className="row">
               <div className="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-4 mx-auto">
                 <div className="single-widget">
@@ -28,22 +40,22 @@ class Footer extends Component {
                   <hr className="hr-line" />
                   <ul className="footer-sub-title">
                     <li>
-                      <Link to="#">About</Link>
+                      <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <Link to="#">Meditation</Link>
+                      <Link to="/meditation">Meditation</Link>
                     </li>
                     <li>
-                      <Link to="#">Quotes</Link>
+                      <Link to="/quotes">Quotes</Link>
                     </li>
                     <li>
-                      <Link to="#">Blogs</Link>
+                      <Link to="/blog">Blogs</Link>
                     </li>
                     <li>
-                      <Link to="#">Videos</Link>
+                      <Link to="/videos">Videos</Link>
                     </li>
                     <li>
-                      <Link to="#">Testimonial</Link>
+                      <Link to="/testimonial">Testimonial</Link>
                     </li>
                   </ul>
                 </div>
@@ -54,16 +66,16 @@ class Footer extends Component {
                   <hr className="hr-line" />
                   <ul className="footer-sub-title">
                     <li>
-                      <Link to="#">Depression</Link>
+                      <Link to="/therapies">Depression</Link>
                     </li>
                     <li>
-                      <Link to="#">Stress</Link>
+                      <Link to="/therapies">Stress</Link>
                     </li>
                     <li>
-                      <Link to="#">Anxiety</Link>
+                      <Link to="/therapies">Anxiety</Link>
                     </li>
                     <li>
-                      <Link to="#">Insomnia</Link>
+                      <Link to="/therapies">Insomnia</Link>
                     </li>
                   </ul>
                 </div>
@@ -74,17 +86,17 @@ class Footer extends Component {
                   <hr className="hr-line" />
                   <ul className="footer-sub-title">
                     <li>
-                      <Link to="#">
+                      <Link to="https://www.facebook.com/lovershelplineofficial/">
                         <img src="icons/fb.png" alt="" className="social-icons" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
+                      <Link to="https://www.youtube.com/channel/UCkGuHlaIAyotWi2CeY8f44w">
                         <img src="icons/yt.png" alt="" className="social-icons" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
+                      <Link to="https://www.instagram.com/sakha_shashank/?r=nametag">
                         <img src="icons/insta.png" alt="" className="social-icons" />
                       </Link>
                     </li>
@@ -95,7 +107,7 @@ class Footer extends Component {
                 <div className="single-widget">
                   <h2>Subscribe Now</h2>
                   <hr className="hr-line" />
-                  <form action="#" className="subscribe">
+                  <div className="subscribe">
                     <input
                       type="text"
                       value={this.state.email}
@@ -103,8 +115,10 @@ class Footer extends Component {
                       onChange={this.subscribeHandler}
                       placeholder="Your email"
                     />
-                    <button className="mt-3 food-btn">Subscribe Now</button>
-                  </form>
+                    <button className="mt-3 food-btn" onClick={this.subscribeSubmit}>
+                      Subscribe Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,4 +143,17 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+const mapStateToProps = (state) => {
+  const CtrContactData = state.CtrContact;
+  return {
+    contactData: CtrContactData
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    subscribeNowActionCall: (data) => dispatch(actionCreator.SubscribeNowAction(data))
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Footer);

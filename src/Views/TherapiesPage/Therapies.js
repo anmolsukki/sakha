@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import YouTube from 'react-youtube';
 import '../../Assets/PortalTheme.css';
@@ -11,6 +12,13 @@ class Therapies extends Component {
     };
   }
 
+  scrollPage = (value) => {
+    window.scrollTo({
+      top: value,
+      behavior: 'smooth'
+    });
+  };
+
   goToStep = (step) => {
     if (step)
       this.setState({
@@ -19,7 +27,7 @@ class Therapies extends Component {
   };
 
   onPlatReady = (event) => {
-    event.target.playVideo();
+    event.target.setVolume(100);
   };
 
   render() {
@@ -27,7 +35,7 @@ class Therapies extends Component {
       height: '390',
       width: '640',
       playerVars: {
-        autoplay: 1
+        autoplay: 0
       }
     };
     return (
@@ -40,6 +48,9 @@ class Therapies extends Component {
                   <p className="welcome">Therapies</p>
                 </div>
               </div>
+              <Link to="#" onClick={() => this.scrollPage(300)} className="home-more">
+                Learn More
+              </Link>
             </div>
           </div>
         </section>
@@ -53,22 +64,22 @@ class Therapies extends Component {
                       <li
                         className={`${this.state.onStep === 1 ? 'selected-categories' : ''}`}
                         onClick={() => this.goToStep(1)}>
-                        Depression
+                        DEPRESSiON
                       </li>
                       <li
                         className={`${this.state.onStep === 2 ? 'selected-categories' : ''}`}
                         onClick={() => this.goToStep(2)}>
-                        Stress
+                        STRESS
                       </li>
                       <li
                         className={`${this.state.onStep === 3 ? 'selected-categories' : ''}`}
                         onClick={() => this.goToStep(3)}>
-                        Anxiety
+                        ANXIETY
                       </li>
                       <li
                         className={`${this.state.onStep === 4 ? 'selected-categories' : ''}`}
                         onClick={() => this.goToStep(4)}>
-                        Insomnia
+                        INSOMNIA
                       </li>
                     </ul>
                   </div>
@@ -120,26 +131,26 @@ class Therapies extends Component {
                         </p>
                       </div>
                       <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 frastration-mob">
-                        <img src="Images/depression.png" alt="" className="img-fluid" />
-                        <p className="depression-occur">
-                          <span className="num">2</span>
-                          <span className="title">DEPRESSION</span>
-                        </p>
-                        <p className="depression-occur-description">
-                          Living long time in frustration affects every part of life. Ignorance of
-                          this reaches to the last and major level i.e. DEPRESSION.
-                        </p>
-                      </div>
-                      <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 frastration-mob">
                         <img src="Images/frustration.png" alt="" className="img-fluid" />
                         <p className="depression-occur">
-                          <span className="num">3</span>
+                          <span className="num">2</span>
                           <span className="title">FRUSTRATION</span>
                         </p>
                         <p className="depression-occur-description">
                           If suppression goes unchecked, it leads to FRUSTRATION. Is the feeling of
                           being upset or annoyed as a result of being unable to change or achieve
                           something. 80% people are frustrated in their lives.
+                        </p>
+                      </div>
+                      <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 frastration-mob">
+                        <img src="Images/depression.png" alt="" className="img-fluid" />
+                        <p className="depression-occur">
+                          <span className="num">3</span>
+                          <span className="title">DEPRESSION</span>
+                        </p>
+                        <p className="depression-occur-description">
+                          Living long time in frustration affects every part of life. Ignorance of
+                          this reaches to the last and major level i.e. DEPRESSION.
                         </p>
                       </div>
                       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -277,7 +288,7 @@ class Therapies extends Component {
                     <div className="row">
                       <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div className="about-page">
-                          <p className="heading">Insomnia</p>
+                          <p className="heading">INSOMNIA</p>
                           <p className="therepies-desc">
                             Insomnia is termed as difficulty in falling asleep or staying asleep.
                             One can live without anything but a sound and healthy sleep. Stress or
@@ -323,7 +334,7 @@ class Therapies extends Component {
           </div>
         </section>
         <section style={{ background: '#F7F7F7' }}>
-          <div className="row clear-margins">
+          <div className="row design-bg-right clear-margins">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5 mb-5 text-center mx-auto">
               <YouTube
                 className="youtube-card"

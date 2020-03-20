@@ -1,7 +1,8 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   /* ------------------------------------------- HomePage ------------------------------------------- */
   .home-bg {
-    background-image: url('/Images/home-bg-mob.png') !important;
+    background-image: linear-gradient(#6c757d, transparent, transparent),
+      url('/Images/home-bg-mob.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -199,6 +200,157 @@
     display: none;
   }
 
+  /* ------------------------------------------- BlogsPage ------------------------------------------- */
+
+  .blogs-bg {
+    background-image: url('/Images/blog-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 310px !important;
+    width: 100%;
+  }
+
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px !important;
+  }
+
+  .hvrbox .hvrbox-layer_top,
+  .hvrbox .hvrbox-layer_top {
+    opacity: 1 !important;
+  }
+
+  .hvrbox .hvrbox-layer_slideup,
+  .hvrbox .hvrbox-layer_slideup {
+    -moz-transform: translateY(50%) !important;
+    -webkit-transform: translateY(50%) !important;
+    -ms-transform: translateY(50%) !important;
+    transform: translateY(50%) !important;
+  }
+
+  .hvrbox .hvrbox-text {
+    text-align: center;
+    font-size: 20px !important;
+    display: inline-block;
+    position: absolute;
+    width: 75%;
+    top: 20% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical;
+  }
+
+  .view-more {
+    position: absolute;
+    bottom: 53% !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+  .youtubebanner {
+    background-image: url('/Images/ytBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- TestimonialPage ------------------------------------------- */
+
+  .testimonial-banner {
+    background-image: url('/Images/testimonial-banner-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- ContactUsPage ------------------------------------------- */
+
+  .contact-title {
+    color: #fff;
+    font-size: 35px !important;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 90px 0 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-detail-title {
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0 !important;
+    font-size: 16px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-form-group {
+    width: 100% !important;
+    margin-bottom: 35px;
+  }
+
+  .textare-controls {
+    width: 100% !important;
+  }
+
+  /* ------------------------------------------- PricingPage ------------------------------------------- */
+
+  .counselling-page-header {
+    width: 100%;
+    border: none;
+    padding: 70px 0 0 0 !important;
+  }
+
+  .main-title {
+    color: #fff;
+    line-height: 30px;
+    font-size: 40px !important;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+    width: 85%;
+    margin: 55px auto !important;
+  }
+
   /* ------------------------------------------- FooterPage ------------------------------------------- */
   .single-widget {
     margin-top: 20px;
@@ -243,7 +395,8 @@
 @media only screen and (min-width: 480px) and (max-width: 576px) {
   /* ------------------------------------------- HomePage ------------------------------------------- */
   .home-bg {
-    background-image: url('/Images/home-bg-mob.png') !important;
+    background-image: linear-gradient(#6c757d, transparent, transparent),
+      url('/Images/home-bg-mob.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -396,12 +549,72 @@
     display: none;
   }
 
-  /* ------------------------------------------- FooterPage ------------------------------------------- */
-  .single-widget {
-    margin-top: 20px;
+  /* ------------------------------------------- BlogsPage ------------------------------------------- */
+
+  .blogs-bg {
+    background-image: url('/Images/blog-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 460px !important;
+    width: 100%;
+  }
+
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px !important;
+  }
+
+  .hvrbox .hvrbox-layer_top,
+  .hvrbox .hvrbox-layer_top {
+    opacity: 1 !important;
+  }
+
+  .hvrbox .hvrbox-layer_slideup,
+  .hvrbox .hvrbox-layer_slideup {
+    -moz-transform: translateY(50%) !important;
+    -webkit-transform: translateY(50%) !important;
+    -ms-transform: translateY(50%) !important;
+    transform: translateY(50%) !important;
+  }
+
+  .hvrbox .hvrbox-text {
+    text-align: center;
+    font-size: 18px !important;
+    display: inline-block;
+    position: absolute;
+    width: 75%;
+    top: 20% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical;
+  }
+
+  .view-more {
+    position: absolute;
+    bottom: 53% !important;
+    text-align: center;
+    width: 100%;
   }
 
   /* ------------------------------------------- YoutubePage ------------------------------------------- */
+  .youtubebanner {
+    background-image: url('/Images/ytBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
 
   .video-style {
     height: 240px !important;
@@ -409,12 +622,82 @@
     padding: 15px;
     border-radius: 20px;
   }
+
+  /* ------------------------------------------- TestimonialPage ------------------------------------------- */
+
+  .testimonial-banner {
+    background-image: url('/Images/testimonial-banner-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- ContactUsPage ------------------------------------------- */
+
+  .contact-title {
+    color: #fff;
+    font-size: 45px !important;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 90px 0 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-detail-title {
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0 !important;
+    font-size: 16px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-form-group {
+    width: 100% !important;
+    margin-bottom: 35px;
+  }
+
+  .textare-controls {
+    width: 100% !important;
+  }
+
+  /* ------------------------------------------- FooterPage ------------------------------------------- */
+  .single-widget {
+    margin-top: 20px;
+  }
+
+  /* ------------------------------------------- PricingPage ------------------------------------------- */
+  .sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+    width: 85%;
+    margin: 55px auto !important;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
   /* ------------------------------------------- HomePage ------------------------------------------- */
   .home-bg {
-    background-image: url('/Images/home-bg-mob.png') !important;
+    background-image: linear-gradient(#6c757d, transparent, transparent),
+      url('/Images/home-bg-mob.png') !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -585,9 +868,141 @@
     display: none;
   }
 
+  /* ------------------------------------------- BlogsPage ------------------------------------------- */
+
+  .blogs-bg {
+    background-image: url('/Images/blog-bg-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 535px !important;
+    width: 100%;
+  }
+
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px !important;
+  }
+
+  .hvrbox .hvrbox-layer_top,
+  .hvrbox .hvrbox-layer_top {
+    opacity: 1 !important;
+  }
+
+  .hvrbox .hvrbox-layer_slideup,
+  .hvrbox .hvrbox-layer_slideup {
+    -moz-transform: translateY(50%) !important;
+    -webkit-transform: translateY(50%) !important;
+    -ms-transform: translateY(50%) !important;
+    transform: translateY(50%) !important;
+  }
+
+  .hvrbox .hvrbox-text {
+    text-align: center;
+    font-size: 18px !important;
+    display: inline-block;
+    position: absolute;
+    width: 75%;
+    top: 20% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important;
+    -webkit-box-orient: vertical;
+  }
+
+  .view-more {
+    position: absolute;
+    bottom: 53% !important;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+  .youtubebanner {
+    background-image: url('/Images/ytBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- TestimonialPage ------------------------------------------- */
+
+  .testimonial-banner {
+    background-image: url('/Images/testimonial-banner-mob.png') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- ContactUsPage ------------------------------------------- */
+
+  .contact-title {
+    color: #fff;
+    font-size: 45px !important;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 90px 0 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0 !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-detail-title {
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0 !important;
+    font-size: 16px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-form-group {
+    width: 100% !important;
+    margin-bottom: 35px;
+  }
+
+  .textare-controls {
+    width: 100% !important;
+  }
+
   /* ------------------------------------------- FooterPage ------------------------------------------- */
   .single-widget {
     margin-top: 20px;
+  }
+
+  /* ------------------------------------------- PricingPage ------------------------------------------- */
+  .sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+    width: 85%;
+    margin: 55px auto !important;
   }
 }
 
@@ -701,6 +1116,49 @@
     display: none;
   }
 
+  /* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+  .youtubebanner {
+    background-image: url('/Images/ytBanner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+    width: 100%;
+  }
+
+  /* ------------------------------------------- ContactUsPage ------------------------------------------- */
+
+  .contact-title {
+    color: #fff;
+    font-size: 35px !important;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 70px 0 0 40px !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    margin: 10px 0 0 40px !important;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
+  .contact-detail-title {
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0 0 40px !important;
+    font-size: 16px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+  }
+
   /* ------------------------------------------- FooterPage ------------------------------------------- */
   .subscribe input {
     width: 100%;
@@ -735,5 +1193,18 @@
     font-family: 'FiraSans-Regular';
     text-transform: uppercase;
     line-height: 34px;
+  }
+
+  /* ------------------------------------------- PricingPage ------------------------------------------- */
+
+  .sub-title {
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.5px;
+    position: relative;
+    font-family: 'FiraSans-Regular';
+    width: 70%;
+    margin: 55px auto !important;
   }
 }

@@ -247,7 +247,8 @@
 .about-main {
   position: absolute;
   bottom: 100px;
-  margin-left: 35px;
+  width: 100%;
+  text-align: center;
 }
 
 .about-main .heading {
@@ -298,6 +299,52 @@
   margin-right: 40px;
   color: white;
   font-size: 21px;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 30%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+}
+
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(100%);
+  transform: scale(2);
+}
+
+/* ------------------------------------------- MeditationPage ------------------------------------------- */
+
+.meditation-bg {
+  background-image: linear-gradient(transparent, transparent, #184448),
+    url('/Images/meditation-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.madition-gradiant {
+  background-image: linear-gradient(
+    #17444b 0%,
+    #18464b 25%,
+    #009bd1 50%,
+    #009bd1 75%,
+    #009bd1 100%
+  );
 }
 
 /* ------------------------------------------- TherapiesPage ------------------------------------------- */
@@ -373,28 +420,7 @@
 }
 
 .youtube-card {
-  border-radius: 10px;
-}
-
-/* ------------------------------------------- MeditationPage ------------------------------------------- */
-
-.meditation-bg {
-  background-image: linear-gradient(transparent, transparent, #184448),
-    url('/Images/meditation-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
-
-.madition-gradiant {
-  background-image: linear-gradient(
-    #17444b 0%,
-    #18464b 25%,
-    #009bd1 50%,
-    #009bd1 75%,
-    #009bd1 100%
-  );
+  box-shadow: 0px 0px 12px 7px #3d3d3d;
 }
 
 /* ------------------------------------------- QuotesPage ------------------------------------------- */
@@ -422,6 +448,467 @@
   color: #ffffff;
   font-weight: 500;
   font-family: 'FiraSans-Regular';
+}
+
+/* ------------------------------------------- BlogsPage ------------------------------------------- */
+
+.blogs-bg {
+  background-image: url('/Images/blog-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.blog-img {
+  border-radius: 7px;
+}
+
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  background: #1ba4d4;
+  color: #ffffff;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+
+.hvrbox .hvrbox-layer_slideup {
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.hvrbox:hover .hvrbox-layer_slideup,
+.hvrbox.active .hvrbox-layer_slideup {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  position: absolute;
+  width: 75%;
+  top: 40%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.view-more {
+  position: absolute;
+  bottom: 35px;
+  text-align: center;
+  width: 100%;
+}
+
+.view-more a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.view-more:hover {
+  color: #ffffff;
+}
+
+/* ------------------------------------------- YoutubePage ------------------------------------------- */
+
+.youtubebanner {
+  background-image: url('/Images/ytBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  width: 100%;
+}
+
+.yuotube-main {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.yuotube-main .heading {
+  color: #ffffff;
+  font-size: 45px;
+  font-family: 'FiraSans-SemiBold';
+}
+
+.video-style {
+  height: 250px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.Videos-header {
+  width: 100%;
+  padding: 20px 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------- TestimonialPage ------------------------------------------- */
+
+.testimonial-banner {
+  background-image: url('/Images/testimonial-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+  width: 100%;
+}
+
+/* ------------------------------------------- ContactUsPage ------------------------------------------- */
+.page-header {
+  width: 100%;
+  border: none;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 55px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-align: left;
+  margin: 90px 0 0 90px;
+  position: relative;
+  font-family: 'FiraSans-Regular';
+}
+
+.contact-sub-title {
+  color: #fff;
+  font-weight: 500;
+  text-align: left;
+  margin: 35px 0 0 90px;
+  position: relative;
+  font-family: 'FiraSans-Regular';
+}
+
+.contact-detail-title {
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 0 0 90px;
+  font-size: 16px;
+  position: relative;
+  font-family: 'FiraSans-Regular';
+}
+
+.contact-details {
+  margin-left: 16px;
+}
+
+.icon-spacer {
+  margin-left: 35px;
+}
+
+.contact-form-vertical {
+  width: 100%;
+  margin: auto;
+}
+
+.contact-form-group {
+  width: 80%;
+  margin-bottom: 35px;
+}
+
+.contact-controls {
+  width: 100%;
+}
+
+.contact-form-control {
+  width: 100%;
+  color: #ffffff;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  vertical-align: top;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  height: 45px;
+  font-family: 'FiraSans-Regular';
+  line-height: 34px;
+}
+
+.contact-form-control:focus {
+  border-color: #ffffff;
+  border-width: medium medium 2px;
+}
+
+.contact-form-vertical .floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'FiraSans-Regular';
+  transition: 0.5s ease all;
+}
+
+.contact-form-control:focus ~ .floating-label {
+  top: -10px;
+  left: 15px;
+  font-size: 13px;
+  font-family: 'FiraSans-Regular';
+  opacity: 1;
+}
+
+.unfocus-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: -10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  transition: 0.5s ease all;
+}
+
+.unfocus {
+  top: -10px;
+  left: 15px;
+  font-size: 13px;
+  font-family: 'FiraSans-Regular';
+  opacity: 1;
+}
+
+.control-label {
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: 'FiraSans-Regular';
+}
+
+.textare-controls {
+  width: 80%;
+}
+
+.form-textarea {
+  background-color: transparent;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  padding: 5px 5px 0 5px !important;
+  color: #ffffff;
+  width: 100%;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border: 2px solid #ffffff;
+}
+
+.button-control {
+  color: #ffffff;
+  outline: none;
+  padding: 0px 11px !important;
+  font-size: 13px;
+  font-weight: 400;
+  vertical-align: top;
+  background-color: #e86060;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #888888;
+  transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  width: 100%;
+  height: 55px;
+  font-family: 'FiraSans-Regular';
+  text-transform: uppercase;
+  line-height: 34px;
+  cursor: pointer;
+}
+
+.button-control:focus {
+  outline: none;
+}
+
+/* ------------------------------------------- PricingPage ------------------------------------------- */
+
+.page-content-inner {
+  border-radius: 0px;
+  min-height: 100%;
+  position: relative;
+}
+
+.price-icon {
+  z-index: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -30px;
+  left: 0;
+  right: 0;
+}
+
+.counselling-page-header {
+  width: 100%;
+  border: none;
+  padding: 40px 0 0 0;
+}
+
+.main-title {
+  color: #fff;
+  line-height: 30px;
+  font-size: 55px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  font-family: 'FiraSans-Regular';
+}
+
+.sub-title {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin: 55px 0 30px 0;
+  position: relative;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-card-theme {
+  background: #ffffff;
+  border: 1px solid #f3e9e9;
+  border-radius: 5px;
+}
+
+.price-card-theme .title {
+  color: #1c2e3d;
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 85px;
+  text-align: center;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-card-theme .price {
+  color: #1c2e3d;
+  line-height: 30px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-card-theme .per-month {
+  color: #1c2e3d;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  padding: 6px;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-card-dec {
+  color: #1c2e3d;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'FiraSans-Regular';
+  border-bottom: 2px solid #06636e;
+}
+
+.event {
+  color: #1c2e3d;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-select {
+  width: 100%;
+  margin: 35px auto;
+}
+
+.price-select .btn {
+  background: #e8594e;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'FiraSans-Regular';
+}
+
+.price-select .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.diagnosis {
+  color: white;
+  border: 1px solid #a5a0a0;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 /* ------------------------------------------- FooterPage ------------------------------------------- */
@@ -491,6 +978,11 @@
   font-family: 'FiraSans-Regular';
   text-transform: uppercase;
   line-height: 34px;
+  cursor: pointer;
+}
+
+.food-btn:focus {
+  outline: none;
 }
 
 .footer-bottom {
@@ -506,20 +998,4 @@
 
 .social-icons {
   padding: 10px 0;
-}
-
-/* ------------------------------------------- YoutubePage ------------------------------------------- */
-
-.video-style {
-  height: 250px;
-  width: 100%;
-  padding: 15px;
-  border-radius: 20px;
-}
-
-.Videos-header {
-  width: 100%;
-  padding: 20px 20px 0;
-  font-size: 20px;
-  font-weight: 700;
 }

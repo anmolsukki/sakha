@@ -3,7 +3,11 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import loadable from 'loadable-components';
 import './App.css';
 
-const Loading = () => <div>Loading...</div>;
+const Loading = () => (
+  <div className="loader">
+    <div className="sbl-circ-dual"></div>
+  </div>
+);
 
 const DefaultLayout = loadable(() => import('./Containers'), {
   LoadingComponent: Loading

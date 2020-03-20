@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { YtData } from './YoutubeData';
 import '../../Assets/PortalTheme.css';
 
-class YtVideos extends Component {
+class Testimonial extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,9 +21,9 @@ class YtVideos extends Component {
       <div className="fade-in">
         <div className="row clear-margins">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 clear-padings">
-            <div className="youtubebanner">
+            <div className="testimonial-banner">
               <div className="yuotube-main">
-                <span className="heading">Videos</span>
+                <span className="heading">Testimonial</span>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ class YtVideos extends Component {
                     <iframe
                       className="video-style"
                       src={link.video}
-                      title="reactjs"
+                      title="Youtube"
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen></iframe>
@@ -51,4 +51,4 @@ class YtVideos extends Component {
   }
 }
 
-export default YtVideos;
+export default Testimonial;

@@ -4,6 +4,13 @@ import Footer from '../Footer/Footer';
 import '../../Assets/PortalTheme.css';
 
 class About extends Component {
+  scrollPage = (value) => {
+    window.scrollTo({
+      top: value,
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     return (
       <div className="fade-in">
@@ -15,7 +22,7 @@ class About extends Component {
                   <span className="heading">“My Life is my message…!”</span>
                 </div>
               </div>
-              <Link to="#" className="home-more">
+              <Link to="#" onClick={() => this.scrollPage(300)} className="home-more">
                 Learn More
               </Link>
             </div>
@@ -136,17 +143,25 @@ class About extends Component {
               <div className="row design-bg-left">
                 <div className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col- mx-auto">
                   <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mx-auto text-center">
-                      <img src="Images/about-card1.png" alt="" className="img-fluid" />
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 text-center">
+                      <div className="img-hover-zoom img-hover-zoom--slowmo">
+                        <img src="Images/about-card1.png" alt="" className="img-fluid" />
+                      </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mx-auto text-center">
-                      <img src="Images/about-card2.png" alt="" className="img-fluid" />
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 text-center">
+                      <div className="img-hover-zoom img-hover-zoom--slowmo">
+                        <img src="Images/about-card2.png" alt="" className="img-fluid" />
+                      </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-5 mx-auto text-center">
-                      <img src="Images/about-card3.png" alt="" className="img-fluid" />
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 text-center">
+                      <div className="img-hover-zoom img-hover-zoom--slowmo">
+                        <img src="Images/about-card3.png" alt="" className="img-fluid" />
+                      </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-5 mx-auto text-center">
-                      <img src="Images/about-card4.png" alt="" className="img-fluid" />
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 text-center">
+                      <div className="img-hover-zoom img-hover-zoom--slowmo">
+                        <img src="Images/about-card4.png" alt="" className="img-fluid" />
+                      </div>
                     </div>
                   </div>
                 </div>

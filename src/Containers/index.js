@@ -8,47 +8,30 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      drawerSelected: false,
-      screenWidth: 0
+      drawerSelected: false
     };
   }
 
-  loading = () => <div>Loading...</div>;
-
-  componentDidMount = () => {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  };
-
-  componentWillUnmount = () => {
-    window.removeEventListener('resize', this.updateWindowDimensions);
-  };
-
-  updateWindowDimensions = () => {
-    this.setState({ screenWidth: window.innerWidth });
-  };
+  loading = () => (
+    <div className="loader">
+      <div className="sbl-circ-dual"></div>
+    </div>
+  );
 
   gotoHome = () => {
     this.props.history.push('home');
     document.getElementById('mySidebar').style.width = '0';
     document.getElementById('main').style.marginLeft = '0';
+    document.getElementsByClassName('main-container')[0].style.filter = '';
     this.setState({
       drawerSelected: false
     });
   };
 
   openNav = () => {
-    if (this.state.screenWidth <= 767) {
-      document.getElementById('mySidebar').style.width = '100%';
-    } else {
-      document.getElementById('mySidebar').style.width = '260px';
-      document.getElementById('main').style.marginLeft = '260px';
-    }
-    if (this.props.history.location.pathname === '/home') {
-      this.props.history.push('about');
-    } else {
-      this.props.history.push(this.props.location.pathname);
-    }
+    document.getElementById('mySidebar').style.width = '100%';
+    this.props.history.push(this.props.location.pathname);
+    document.getElementsByClassName('main-container')[0].style.filter = 'blur(6px)';
     this.setState({
       drawerSelected: !this.state.drawerSelected
     });
@@ -57,15 +40,10 @@ class Main extends Component {
   closeNav = () => {
     document.getElementById('mySidebar').style.width = '0';
     document.getElementById('main').style.marginLeft = '0';
+    document.getElementsByClassName('main-container')[0].style.filter = '';
     this.setState({
       drawerSelected: !this.state.drawerSelected
     });
-  };
-
-  handleDrawerClick = () => {
-    if (this.state.screenWidth <= 767) {
-      this.closeNav();
-    }
   };
 
   render() {
@@ -92,17 +70,25 @@ class Main extends Component {
         <div id="mySidebar" className="sidebar">
           {this.state.drawerSelected === true ? (
             <div>
-              <p
-                className={`${this.state.drawerSelected === true ? 'lh-header-fade' : ''}`}
-                onClick={this.gotoHome}>
-                Sakha
-              </p>
               <ul className="nav-menu">
+                <li className="nav-option">
+                  <Link to={{ pathname: '/home' }} onClick={this.closeNav}>
+                    <img
+                      src={
+                        this.props.location.pathname === '/home'
+                          ? 'icons/home-active.svg'
+                          : 'icons/home.png'
+                      }
+                      alt=""
+                      className="home-icon"
+                    />
+                  </Link>
+                </li>
                 <li className="nav-option">
                   <Link
                     to={{ pathname: '/about' }}
                     className={this.props.location.pathname === '/about' ? 'nav-option active' : ''}
-                    onClick={this.handleDrawerClick}>
+                    onClick={this.closeNav}>
                     About Sakha
                   </Link>
                 </li>
@@ -112,7 +98,7 @@ class Main extends Component {
                     className={
                       this.props.location.pathname === '/meditation' ? 'nav-option active' : ''
                     }
-                    onClick={this.handleDrawerClick}>
+                    onClick={this.closeNav}>
                     Meditation
                   </Link>
                 </li>
@@ -122,7 +108,7 @@ class Main extends Component {
                     className={
                       this.props.location.pathname === '/therapies' ? 'nav-option active' : ''
                     }
-                    onClick={this.handleDrawerClick}>
+                    onClick={this.closeNav}>
                     Therapies
                   </Link>
                 </li>
@@ -132,8 +118,16 @@ class Main extends Component {
                     className={
                       this.props.location.pathname === '/quotes' ? 'nav-option active' : ''
                     }
-                    onClick={this.handleDrawerClick}>
+                    onClick={this.closeNav}>
                     Quotes By Sakha
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/blog' }}
+                    className={this.props.location.pathname === '/blog' ? 'nav-option active' : ''}
+                    onClick={this.closeNav}>
+                    Blogs
                   </Link>
                 </li>
                 <li className="nav-option">
@@ -142,8 +136,38 @@ class Main extends Component {
                     className={
                       this.props.location.pathname === '/videos' ? 'nav-option active' : ''
                     }
-                    onClick={this.handleDrawerClick}>
+                    onClick={this.closeNav}>
                     Videos
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/testimonial' }}
+                    className={
+                      this.props.location.pathname === '/testimonial' ? 'nav-option active' : ''
+                    }
+                    onClick={this.closeNav}>
+                    Testimonial
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/pricing' }}
+                    className={
+                      this.props.location.pathname === '/pricing' ? 'nav-option active' : ''
+                    }
+                    onClick={this.closeNav}>
+                    Pricing
+                  </Link>
+                </li>
+                <li className="nav-option">
+                  <Link
+                    to={{ pathname: '/contact' }}
+                    className={
+                      this.props.location.pathname === '/contact' ? 'nav-option active' : ''
+                    }
+                    onClick={this.closeNav}>
+                    Contact Us
                   </Link>
                 </li>
               </ul>

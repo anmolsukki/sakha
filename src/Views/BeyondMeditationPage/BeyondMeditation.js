@@ -6,14 +6,22 @@ import '../../Assets/PortalTheme.css';
 
 class BeyondMeditation extends Component {
   onPlatReady = (event) => {
-    event.target.playVideo();
+    event.target.pauseVideo();
   };
+
+  scrollPage = (value) => {
+    window.scrollTo({
+      top: value,
+      behavior: 'smooth'
+    });
+  };
+
   render() {
     const opts = {
       height: '390',
       width: '640',
       playerVars: {
-        autoplay: 1
+        autoplay: 0
       }
     };
     return (
@@ -26,7 +34,7 @@ class BeyondMeditation extends Component {
                   <p className="meditation-desc">Beyond Meditation</p>
                 </div>
               </div>
-              <Link to="#" className="home-more">
+              <Link to="#" onClick={() => this.scrollPage(300)} className="home-more">
                 Learn More
               </Link>
             </div>
@@ -77,11 +85,11 @@ class BeyondMeditation extends Component {
           </div>
         </section>
         <section style={{ background: '#F7F7F7' }}>
-          <div className="row clear-margins">
+          <div className="row design-bg-right clear-margins">
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5 mb-5 text-center mx-auto">
               <YouTube
                 className="youtube-card"
-                videoId="oFSUA1I78Zo"
+                videoId="M_w_IKDDL1U"
                 opts={opts}
                 onReady={this.onPlatReady}
               />
@@ -89,7 +97,7 @@ class BeyondMeditation extends Component {
           </div>
         </section>
         <section>
-          <div className="row clear-margins design-bg-right">
+          <div className="row clear-margins design-bg-left">
             <div
               className="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-11 mt-5 mb-5 mx-auto"
               style={{ background: '#009BD1', borderRadius: '5px' }}>
